@@ -4,3 +4,4 @@
 *.css.map
 !main.css
 .idea
+.DS_Store
