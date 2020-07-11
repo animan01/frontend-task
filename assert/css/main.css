@@ -318,11 +318,11 @@ button {
       position: absolute;
       width: 15rem;
       left: -4rem;
-      top: -4rem;
+      top: -8rem;
       transform: rotate(-108deg);
       background-size: 15rem;
-      right: 0;
-      height: 40vh; } }
+      right: unset;
+      height: 34%; } }
   @media (min-width: 768px) and (max-width: 1199px) {
     #circle {
       position: absolute;
