@@ -1,0 +1,6 @@
+# Ignore files and folders
+.sass-cache
+*.css
+*.css.map
+!main.css
+.idea

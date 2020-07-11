@@ -1,0 +1,26 @@
+@import "components/basic/mixin";
+@import "components/basic/variables";
+@import "components/basic/fonts";
+@import "components/header";
+@import "components/page/front";
+@import "components/form/register-form";
+@import "components/button/default";
+@import "components/extra/extra-elements";
+
+
+body {
+  font-family: Montserrat-Medium, serif;
+  margin: 0;
+  position: relative;
+
+  .sidebar {
+    padding: 1rem 0;
+    background-color: white;
+
+    @include desktop {
+      padding: 0;
+    }
+  }
+}
+
+

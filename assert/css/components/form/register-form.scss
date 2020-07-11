@@ -1,0 +1,143 @@
+#register-form {
+  width: 390px;
+  background: $grey-input;
+  position: absolute;
+  right: 4%;
+  top: 0;
+  opacity: 0.9;
+
+  @include mobile {
+    background: $grey-input;
+    display: block;
+    position: unset;
+    margin: 0 auto;
+    font-size:16px;
+    width: 260px;
+    opacity: 1;
+  }
+
+  @include tablet {
+    position: unset;
+    margin: 0 auto;
+    opacity: 1;
+  }
+
+  .register-form-title {
+    background: url("../img/register-form-title-background.svg") center;
+    height: 121px;
+    text-align: center;
+    color: $white;
+    font-size: 25px;
+
+    @include mobile {
+      background: url("../img/register-form-title-background-mobile.svg") center no-repeat;
+      background-size: 18rem;
+      font-size:40px;
+      font-weight: bold;
+      height: 4rem;
+    }
+
+    @include tablet {
+      padding: 1rem 4rem;
+      font-size: 1.2rem;
+      background-size: 26rem;
+      height: 6rem;
+    }
+
+    p {
+      margin: 0;
+      padding: 2rem;
+
+      @include mobile {
+        font-size: 1rem;
+        padding: 1rem;
+      }
+
+      @include tablet {
+        padding: 0;
+        padding-top: 1rem;
+      }
+    }
+  }
+
+  .field {
+    margin: 1rem auto;
+    opacity: 0.8;
+    padding: 0 5rem;
+
+    @include mobile {
+      margin: 1rem 2rem;
+      padding: 0;
+    }
+
+    @include tablet {
+      padding: 0 4rem;
+    }
+
+
+    input {
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #8E9EAC;
+      background-color: $grey-input;
+
+      @include mobile {
+        height: 1rem;
+        font-size: 0.8rem;
+      }
+
+      &::placeholder {
+        color: $white;
+      }
+    }
+
+  }
+
+  .phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    label {
+      display: inline-block;
+
+      @include tablet {
+        width: 75%;
+      }
+    }
+
+    .phone-code {
+      width: 30%;
+      margin-right: 0.5rem;
+    }
+  }
+
+  #submit-register-form {
+    border-radius: 0;
+
+    @include mobile {
+
+    }
+
+    @include tablet {
+      padding: 1rem 4rem;
+      font-size: 1.3rem;
+      margin-top: 2rem;
+    }
+  }
+
+  .notice {
+    font-size: 12px;
+    padding: 1rem 4rem;
+    color: $white;
+    opacity: 0.7;
+    text-align: center;
+    font-family: Montserrat-Light, sans-serif;
+
+    @include mobile {
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+  }
+
+}

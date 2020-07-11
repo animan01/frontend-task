@@ -1,0 +1,62 @@
+#header {
+  position: absolute;
+  z-index: 101;
+  background-color: transparent;
+
+  @include mobile {
+    position: unset;
+    width: 100%;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @include tablet {
+    top: 3rem;
+    left: 6rem;
+  }
+
+  h1 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .logo-no-mobile {
+    display: block;
+    margin: 8rem 19rem;
+
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      margin: auto;
+    }
+  }
+
+  .logo-mobile {
+    display: none;
+
+    @include mobile {
+      display: block;
+      width: 6rem;
+      padding: 1rem;
+    }
+
+  }
+
+  #get-report {
+    display: none;
+
+    @include mobile {
+      display: block;
+      text-transform: uppercase;
+      padding: 0.8rem 0.5rem;
+      margin: 0;
+      box-shadow: inset 0 1px 0 1px $border-button;
+    }
+
+  }
+
+
+}

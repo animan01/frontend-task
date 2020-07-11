@@ -1,0 +1,16 @@
+button {
+  width: auto;
+  font-size: 14px;
+  margin: auto;
+  display: block;
+  background: $blue;
+  color: $white;
+  border: none;
+  padding: 10px 20px;
+
+  @include mobile {
+    font-size: 1rem;
+    border-radius: 0.2rem;
+  }
+
+}
